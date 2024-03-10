@@ -1,0 +1,32 @@
+{% extends 'core/base.html' %}
+{% block content %}
+<section class="index">
+    <div class="wrapper">
+        <div class="index-box">
+            <div class="categories">
+                <a href="{% url 'index' %}" class="{% if not active_category %}active-link {% endif %}no-td category-dft-link">Все</a>
+                {% for category in categories %}
+                <a href="{% url 'index' %}?category={{ category.slug }}" class="{% if category.slug == active_category %}active-link {% endif %}no-td category-link">{{ category }}</a>
+                {% endfor %}
+            </div>
+            <div class="products-list">
+                {% for product in products %}
+                <div class="product-card" data-aos="fade-in" data-aos-duration="1500" data-aos-once="true">
+                    <div class="card-img-box">
+                        <a href="{% url 'product-detail' product.slug %}" id="card-img">
+                            <img src="{{ product.get_image_main }}" alt="" class="card-img front-img" onmouseover="this.src='{{ product.get_image_2 }}';" onmouseout="this.src='{{ product.get_image_main }}';" />
+                        </a>
+                    </div>
+                    <div class="card-bottom-box">
+                        <div class="card-info">
+                            <a href="{% url 'product-detail' product.slug %}" class="card-title no-td">{{ product.name }}</a>
+                            <a href="{% url 'product-detail' product.slug %}" class="card-price no-td">{{ product.price }}</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

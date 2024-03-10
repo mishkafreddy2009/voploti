@@ -1,0 +1,60 @@
+{% extends 'core/base.html' %}
+{% block content %}
+<section class="product-detail">
+    <div class="wrapper">
+        <div class="detail-wrapper">
+            <div class="detail-img-box">
+                <div class="detail-img-box-small">
+                    {% if product.image_main %}
+                    <img
+                        src="{{ product.get_image_main }}"
+                        alt="{{ product.name }}"
+                        class="detail-img-small"
+                        onmouseover="scaleImage(this)">
+                    {% endif %}
+                    {% if product.image_2 %}
+                    <img
+                        src="{{ product.get_image_2 }}"
+                        alt="{{ product.name }}"
+                        class="detail-img-small"
+                        onmouseover="scaleImage(this)">
+                    {% endif %}
+                    {% if product.image_3 %}
+                    <img
+                        src="{{ product.get_image_3 }}"
+                        alt="{{ product.name }}"
+                        class="detail-img-small"
+                        onmouseover="scaleImage(this)">
+                    {% endif %}
+                    {% if product.image_4 %}
+                    <img
+                        src="{{ product.get_image_4 }}"
+                        alt="{{ product.name }}"
+                        class="detail-img-small"
+                        onmouseover="scaleImage(this)">
+                    {% endif %}
+                    {% if product.image_5 %}
+                    <img
+                        src="{{ product.get_image_5 }}"
+                        alt="{{ product.name }}"
+                        class="detail-img-small"
+                        onmouseover="scaleImage(this)">
+                    {% endif %}
+                </div>
+                <div class="detail-img-box-big">
+                    <img src="{{ product.get_image_main }}" alt="{{ product.name }}" class="detail-img big-img">
+                </div>
+            </div>
+            <div class="detail-info-box">
+                <p class="detail-title">{{ product.name }}</p>
+                <p class="detail-price">{{ product.price }}</p>
+                {% if product.description %}
+                    {% autoescape off %}
+                        <p class="detail-desc">{{ product.description|linebreaksbr }}</p>
+                    {% endautoescape %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

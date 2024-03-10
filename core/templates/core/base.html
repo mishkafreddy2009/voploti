@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOPLOTI</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'img/favicon.jpg' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header class="header">
+        <div class="header-fixed">
+            {% if request.path == "/" %}
+                <h1 class="logo">Voploti</h1>
+            {% else %}
+                <a href="{% url 'index' %}" class="no-td"><h1 class="logo">Voploti</h1></a>
+            {% endif %}
+        </div>
+        <div class="header-menu">
+            <div class="wrapper">
+            </div>
+        </div>
+    </header>
+    <main class="main">{% block content %}{% endblock content %}</main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer-wrapper">
+                <p class="footer-copy">&copy; Voploti</p>
+                <a href="#" class="gray-hover no-td">о нас</a>
+                <a href="#" class="gray-hover no-td">условия доставки</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <script src="https://unpkg.com/hyperscript.org@0.9.12"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init()
+    </script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
