@@ -218,7 +218,7 @@ a {
 }
 
 .big-img {
-    /* max-width: 500px; */
+    max-width: 500px;
 }
 
 .detail-img-small {
@@ -315,6 +315,11 @@ a {
     cursor: pointer;
 }
 
+.action-btn::after {
+    content: "+";
+    font-size: 1.5rem;
+}
+
 .action-emp-btn:hover {
     color: #fff;
     background-color: #1211cf;
@@ -403,6 +408,7 @@ a {
 }
 
 .action-btn {
+    margin: 1rem 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -410,7 +416,7 @@ a {
     text-decoration: none;
     color: #fff;
     background-color: #1211cf;
-    padding: 0.85rem 1.25rem;
+    padding: 0.5rem 1.25rem;
     letter-spacing: normal;
     border: none;
     outline: none;
