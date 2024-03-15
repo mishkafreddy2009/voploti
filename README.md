@@ -1,8 +1,11 @@
-# VOPLOTI (dropped)
+# VOPLOTI
 
-демо e-commerce для ВОПЛОТИ (https://vk.com/voplotiwear).
+dropped demo e-commerce for Voploti (https://vk.com/voplotiwear)
 
-### stack
+![home](./img/home.png)
+![detail](./img/detail.png)
+
+## stack
 
 - django
 - htmx
