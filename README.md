@@ -1,6 +1,6 @@
 # VOPLOTI
 
-dropped demo e-commerce for Voploti (https://vk.com/voplotiwear)
+**dropped** demo e-commerce for Voploti (https://vk.com/voplotiwear)
 
 ![home](./img/home.png)
 ![detail](./img/detail.png)
