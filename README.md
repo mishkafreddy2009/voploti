@@ -7,5 +7,6 @@
 
 ## stack
 
-- django
-- htmx
+django
+
+htmx
