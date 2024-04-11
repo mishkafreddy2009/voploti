@@ -1,6 +1,4 @@
-# VOPLOTI (abandoned)
-
-demo e-commerce for Voploti (https://vk.com/voplotiwear)
+# demo e-commerce for [voploti](https://vk.com/voplotiwear) (abandoned)
 
 ![home](./img/home.png)
 ![detail](./img/detail.png)
@@ -10,3 +8,8 @@ demo e-commerce for Voploti (https://vk.com/voplotiwear)
 - django
 - htmx
 - javascript
+
+## todos
+
+- [ ] create cart implementation;
+- [ ] etc...;
