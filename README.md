@@ -1,4 +1,4 @@
-# demo e-commerce for [voploti](https://vk.com/voplotiwear) (abandoned)
+# [voploti](https://vk.com/voplotiwear) (abandoned)
 
 ![home](./img/home.png)
 ![detail](./img/detail.png)
