@@ -1,6 +1,6 @@
-# VOPLOTI
+# VOPLOTI (abandoned)
 
-**dropped** demo e-commerce for Voploti (https://vk.com/voplotiwear)
+demo e-commerce for Voploti (https://vk.com/voplotiwear)
 
 ![home](./img/home.png)
 ![detail](./img/detail.png)
@@ -9,3 +9,4 @@
 
 - django
 - htmx
+- javascript
