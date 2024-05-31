@@ -3,7 +3,7 @@
 ![home](./img/home.png)
 ![detail](./img/detail.png)
 
-## stack
+## used technologies
 
 - django
 - htmx
@@ -12,4 +12,4 @@
 ## todos
 
 - [ ] create cart implementation;
-- [ ] etc...;
+- [ ] ...;
